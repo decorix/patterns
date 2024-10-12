@@ -1,0 +1,253 @@
+<mxfile host="app.diagrams.net" modified="2024-01-13T05:59:10.892Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 YaBrowser/23.11.0.0 Safari/537.36" etag="BOH1aSP45fH2L7hCS-JM" version="22.1.18" type="device">
+  <diagram name="Страница — 1" id="C1njj0XmKwgTJGrPmlWy">
+    <mxGraphModel dx="2840" dy="909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-1" value="&amp;lt;&amp;lt;Singletone&amp;gt;&amp;gt;&lt;br&gt;Reciever" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="200" width="140" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-2" value="//Screen methods&lt;br&gt;SetMovie()&lt;br&gt;ChangeScreen()&lt;br&gt;Stop()&lt;br&gt;Play()&lt;br&gt;FastForvard()&lt;br&gt;Rewind()&lt;br&gt;SetPlaybackSpeed()&lt;br&gt;fastForvard()&lt;br&gt;rewind()&lt;br&gt;&lt;br&gt;//Sound methods&lt;br&gt;Mute()&lt;br&gt;IncreaseSound()&lt;br&gt;DecreaseSound()&lt;br&gt;&lt;br&gt;//OpticalDrive methods&lt;br&gt;SetDrive()&lt;br&gt;OpenDrive()&lt;br&gt;CloseDrive()&lt;br&gt;&lt;br&gt;//Light Methods&lt;br&gt;SetLightMode()&lt;br&gt;TurnOnLight()&lt;br&gt;TurnOffLight()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-1">
+          <mxGeometry y="30" width="140" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-5" value="&amp;lt;&amp;lt;Abstract&amp;gt;&amp;gt;&lt;br&gt;RemoteControl" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="150" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-6" value="//ScreenMethods&lt;br&gt;SendSetMovie()&lt;br&gt;SendChangeScreen()&lt;br&gt;SendStop()&lt;br&gt;SendPlay()&lt;br&gt;SendFastForvard()&lt;br&gt;SendRewind()&lt;br&gt;SendSetPlaybackSpeed()&lt;br&gt;SendfastForvard()&lt;br&gt;Sendrewind()&lt;br&gt;&lt;br&gt;//Sound methods&lt;br&gt;SendMute()&lt;br&gt;SendIncreaseSound()&lt;br&gt;SendDecreaseSound()&lt;br&gt;&lt;br&gt;//OpticalDrive methods&lt;br&gt;SendSetDrive()&lt;br&gt;SendOpenDrive()&lt;br&gt;SendCloseDrive()&lt;br&gt;&lt;br&gt;//Light Methods&lt;br&gt;SendSetLightMode()&lt;br&gt;SendTurnOnLight()&lt;br&gt;SendTurnOffLight()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-5">
+          <mxGeometry y="30" width="150" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-7" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;Screen" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="710" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-8" value="Display()&lt;br&gt;SetMovie()&lt;br&gt;Stop()&lt;br&gt;Play()&lt;br&gt;FastForvard()&lt;br&gt;Rewind()&lt;br&gt;SetPlaybackSpeed()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-7">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-11" value="Projector" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="960" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-12" value="Display()&lt;br&gt;SetMovie()&lt;br&gt;Stop()&lt;br&gt;Play()&lt;br&gt;FastForvard()&lt;br&gt;Rewind()&lt;br&gt;SetPlaybackSpeed()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-11">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-13" value="TVScreen" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="960" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-14" value="Display()&lt;br&gt;SetMovie()&lt;br&gt;Stop()&lt;br&gt;Play()&lt;br&gt;FastForvard()&lt;br&gt;Rewind()&lt;br&gt;SetPlaybackSpeed()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-13">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-15" value="&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;br&gt;MovieStorage" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="720" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-16" value="PlayMovie()&lt;br&gt;StopMovie()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-15">
+          <mxGeometry y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-17" value="FlashDrive" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="960" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-18" value="PlayMovie()&lt;br&gt;StopMovie()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-17">
+          <mxGeometry y="30" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-19" value="OpticalDrive" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="960" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-20" value="PlayMovie()&lt;br&gt;StopMovie()&lt;br&gt;OpenDrive()&lt;br&gt;CloseDrive()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-19">
+          <mxGeometry y="30" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-21" value="Speakers" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="720" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-22" value="Mute()&lt;br&gt;IncreaseSound()&lt;br&gt;DecreaseSound()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-21">
+          <mxGeometry y="30" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-23" value="Light" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="827" y="720" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-24" value="TurnOn()&lt;br&gt;TurnOff()&lt;br&gt;SetMode()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-23">
+          <mxGeometry y="30" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-25" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-6" target="woKKGH5_GtvpFAxqgPPk-2">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="410" y="410" as="sourcePoint" />
+            <mxPoint x="570" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-26" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.498;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-2" target="woKKGH5_GtvpFAxqgPPk-7">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="610" y="425" as="sourcePoint" />
+            <mxPoint x="490" y="425" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-27" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.363;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-11" target="woKKGH5_GtvpFAxqgPPk-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="880" as="sourcePoint" />
+            <mxPoint x="510" y="880" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="920" />
+              <mxPoint x="391" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-28" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.644;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-13" target="woKKGH5_GtvpFAxqgPPk-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="970" as="sourcePoint" />
+            <mxPoint x="420" y="870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="920" />
+              <mxPoint x="430" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-29" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.64;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-2" target="woKKGH5_GtvpFAxqgPPk-21">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="610" as="sourcePoint" />
+            <mxPoint x="420" y="720" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="650" />
+              <mxPoint x="690" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-30" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.639;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-2" target="woKKGH5_GtvpFAxqgPPk-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="540" as="sourcePoint" />
+            <mxPoint x="600.3232421875" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="429" y="650" />
+              <mxPoint x="897" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.212;exitY=0.999;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-2" target="woKKGH5_GtvpFAxqgPPk-15">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="150" y="480" as="sourcePoint" />
+            <mxPoint x="150" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="650" />
+              <mxPoint x="-20" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-32" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.357;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-17" target="woKKGH5_GtvpFAxqgPPk-16">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-150" y="940" as="sourcePoint" />
+            <mxPoint x="-39" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-150" y="890" />
+              <mxPoint x="-40" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-33" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="100" y="950" as="sourcePoint" />
+            <mxPoint x="-10" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="100" y="890" />
+              <mxPoint x="-10" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-34" value="SimpleWatchController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1101" y="200" width="140" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-35" value="//Screen methods&lt;br&gt;SendSetMovie()&lt;br&gt;SendPlay()&lt;br&gt;SendSetPlaybackSpeed()&lt;br&gt;SendFastForvard()&lt;br&gt;SendTurnOnScreen()&lt;br&gt;&lt;br&gt;//Sound methods&lt;br&gt;SendMute()&lt;br&gt;SendIncreaseSound()&lt;br&gt;SendDecreaseSound()&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-34">
+          <mxGeometry y="30" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-36" value="ComfortableWatchController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1091" y="630" width="160" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-37" value="//Screen methods&lt;br&gt;SendSetMovie()&lt;br&gt;SendChangeScreen()&lt;br&gt;SendPlay()&lt;br&gt;SendFastForvard()&lt;br&gt;SendRewind()&lt;br&gt;SendSetPlaybackSpeed()&lt;br&gt;SendTurnOnScreen()&lt;br&gt;&lt;br&gt;//Sound methods&lt;br&gt;SendMute()&lt;br&gt;SendIncreaseSound()&lt;br&gt;SendDecreaseSound()&lt;br&gt;&lt;br&gt;//OpticalDrive methods&lt;br&gt;SendSetDrive()&lt;br&gt;SendOpenDrive()&lt;br&gt;SendCloseDrive()&lt;br&gt;&lt;br&gt;//Light methods&lt;br&gt;SendTurnOnLight()&lt;br&gt;SendTurnOffLight()&lt;br&gt;SendSetLightMode()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-36">
+          <mxGeometry y="30" width="160" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-38" value="StopWatchController" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1086" y="450" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-39" value="SendStop()&lt;br&gt;SendTurnOffStorageDevice()&lt;br&gt;SendSetLightMode()&lt;br&gt;SendTurnOffScreen()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-38">
+          <mxGeometry y="30" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-40" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.001;entryY=0.215;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-35" target="woKKGH5_GtvpFAxqgPPk-6">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="860" y="530" as="sourcePoint" />
+            <mxPoint x="1020" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-42" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.001;entryY=0.215;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.001;exitY=0.43;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1090" y="510" as="sourcePoint" />
+            <mxPoint x="750" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-43" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.001;entryY=0.215;entryDx=0;entryDy=0;exitX=-0.003;exitY=0.175;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1101" y="560" as="sourcePoint" />
+            <mxPoint x="750" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1030" y="720" />
+              <mxPoint x="1030" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-44" value="SystemRemoteControl" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="450" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-45" value="getSimpleWatchController()&lt;br&gt;getStopWatchController()&lt;br&gt;getComfortableWatchController()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-44">
+          <mxGeometry y="30" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-46" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-45" target="woKKGH5_GtvpFAxqgPPk-39">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1370" y="560" as="sourcePoint" />
+            <mxPoint x="1370" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-47" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.001;exitY=0.711;exitDx=0;exitDy=0;entryX=1;entryY=0.177;entryDx=0;entryDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-45" target="woKKGH5_GtvpFAxqgPPk-37">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1380" y="525" as="sourcePoint" />
+            <mxPoint x="1251" y="525" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="530" />
+              <mxPoint x="1300" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-48" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0;exitY=0.286;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-45" target="woKKGH5_GtvpFAxqgPPk-35">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1380" y="525" as="sourcePoint" />
+            <mxPoint x="1300" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="500" />
+              <mxPoint x="1300" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-49" value="SetTop" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1190" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-50" value="StartSetTop()&lt;br&gt;StopSetStop()&lt;br&gt;PlaySound()&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-49">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-51" value="SetTopAdapter" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="960" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-52" value="Display()&lt;br&gt;SetMovie()&lt;br&gt;Stop()&lt;br&gt;Play()&lt;br&gt;FastForvard()&lt;br&gt;Rewind()&lt;br&gt;SetPlaybackSpeed()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="woKKGH5_GtvpFAxqgPPk-51">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-53" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.644;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="woKKGH5_GtvpFAxqgPPk-51">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="570" y="960" as="sourcePoint" />
+            <mxPoint x="460" y="860" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="910" />
+              <mxPoint x="570" y="910" />
+              <mxPoint x="460" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="woKKGH5_GtvpFAxqgPPk-55" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.498;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="769.5" y="1110" as="sourcePoint" />
+            <mxPoint x="770" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,7 +1,6 @@
-package Lab3;
+package Lab4;
 
 public class Whip extends FavoringDecorator {
-
     public Whip(Beverage beverage) {
         super(beverage);
     }
@@ -12,7 +11,7 @@ public class Whip extends FavoringDecorator {
     }
 
     @Override
-    public int cost() {
-        return super.cost() + 40;
+    public double cost() {
+        return super.cost() + 35;
     }
 }
